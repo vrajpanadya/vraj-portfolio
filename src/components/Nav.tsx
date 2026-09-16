@@ -1323,9 +1323,22 @@ export default function Nav() {
   useMotionValueEvent(scrollY, "change", (v) => setScrolled(v > 40));
 
   const go = (id: string) => {
-    setOpen(false);
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
+  setOpen(false);
+
+  const section = document.getElementById(id);
+  if (!section) return;
+
+  const navbarOffset = 88;
+  const top =
+    section.getBoundingClientRect().top +
+    window.scrollY -
+    navbarOffset;
+
+  window.scrollTo({
+    top,
+    behavior: "smooth",
+  });
+};
 
   return (
     <>
