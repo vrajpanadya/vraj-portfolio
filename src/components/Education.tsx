@@ -1047,8 +1047,8 @@ export default function Education() {
                   className={cn(
                     "group relative overflow-hidden rounded-[24px] border p-5 transition-all duration-500 hover:-translate-y-1 sm:p-6",
                     e.live
-                      ? "border-ink-900 bg-ink-900 text-paper-100"
-                      : "border-ink-900/12 bg-paper-100 hover:border-ink-900/40",
+  ? "border-lime-acid/60 bg-ink-900 text-paper-100 hover:border-lime-acid hover:shadow-[0_0_28px_rgba(205,245,100,0.14)]"
+  : "border-cobalt-500/30 bg-paper-100 hover:border-cobalt-500 hover:shadow-[0_0_28px_rgba(43,57,246,0.12)]",
                   )}
                 >
                   <span
