@@ -1305,6 +1305,7 @@ import { useActiveSection } from "@/components/ui";
 import { cn } from "@/utils/cn";
 
 const links = [
+  { id: "home", label: "Home" },
   { id: "work", label: "Projects" },
   { id: "skills", label: "Skills" },
   { id: "profile", label: "Profile" },
