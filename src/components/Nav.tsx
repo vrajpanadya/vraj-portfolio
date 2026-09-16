@@ -1458,7 +1458,7 @@ export default function Nav() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-[64] flex flex-col justify-center bg-ink-900 px-6 md:hidden"
+            className="fixed inset-0 z-[64] flex flex-col justify-start overflow-y-auto bg-ink-900 px-6 pb-8 pt-24 md:hidden"
           >
             <div className="dot-grid-dark absolute inset-0 opacity-60" />
             {links.map((l, i) => (
@@ -1468,7 +1468,7 @@ export default function Nav() {
                 initial={{ y: 40, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.08 + i * 0.06, duration: 0.6, ease: EASE }}
-                className="relative z-10 flex items-baseline justify-between border-b border-paper-300/12 py-4 text-left font-display text-[13vw] font-bold tracking-tight text-paper-100"
+                className="relative z-10 flex shrink-0 items-baseline justify-between border-b border-paper-300/12 py-3 text-left font-display text-[clamp(2.2rem,11vw,4.5rem)] font-bold leading-[0.95] tracking-tight text-paper-100"
               >
                 {l.label}
                 <span className="font-mono text-[11px] tracking-[0.3em] text-lime-acid">
