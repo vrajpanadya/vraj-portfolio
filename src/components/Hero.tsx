@@ -4230,7 +4230,7 @@ export default function Hero() {
                 </a>
               </Magnetic>
               <a
-                href="https://drive.google.com/file/d/1T61HbUBSmZWQE0jyWW0PZPDIX2PnIO22/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1RLLo_1lIGVxNs8X9ujScoCkK1EPUflM4/view?usp=drive_link"
                 download="Vraj-Pandya-CV.pdf"
                 className="inline-flex items-center gap-2 rounded-full border border-paper-300/25 px-5 py-3.5 font-mono text-[11px] uppercase tracking-[0.18em] text-paper-100 transition-colors hover:border-paper-100 hover:bg-paper-100/5"
               >
